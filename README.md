@@ -24,7 +24,7 @@ This project demonstrates how to build a latching power switch system using an A
 ---
 ### 🔗 Useful Links
  ### • 🔧 Tinkercad Circuit Image:
-https://github.com/JawaherMQ5/Task1-week4/blob/main/T1-PIR.png
+![Latching Power Switch Circuit](https://github.com/JawaherMQ5/Task1-week4/blob/main/T1-PIR.png)
  ### • ▶️ Demo Video:
 https://drive.google.com/file/d/1CmkTs7jXkRkQkdUNyvlPnspf83YovzcU/view?usp=drive_link
 ---
