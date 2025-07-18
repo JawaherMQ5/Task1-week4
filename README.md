@@ -1,4 +1,4 @@
-Task1 (﻿﻿﻿make a latching power switch circuit with auto power off and on.)
+### Task1 (﻿﻿﻿make a latching power switch circuit with auto power off and on.)
 ## 🔌 Latching Power Switch with Auto On/Off using PIR & Push Button (Arduino)
 
 This project demonstrates how to build a latching power switch system using an Arduino Uno, a PIR motion sensor, and a push button. The system turns on an LED when motion is detected or when the button is pressed, and automatically turns it off after 10 seconds of inactivity.
@@ -22,7 +22,14 @@ This project demonstrates how to build a latching power switch system using an A
 - ⏳ Auto Turn Off: If no motion or button press occurs for 10 seconds, the system automatically turns OFF.
 
 ---
-
+### 🔗 Useful Links
+ ### • 🔧 Tinkercad Circuit Image:
+View Circuit Image
+ • 💻 Arduino Code File:
+Download Code
+ ### • ▶️ Demo Video:
+https://drive.google.com/file/d/1CmkTs7jXkRkQkdUNyvlPnspf83YovzcU/view?usp=drive_link
+---
 ### 🔄 Logic Overview (Based on the Code):
 
 ```cpp
@@ -58,11 +65,3 @@ void loop() {
     digitalWrite(ledPin, LOW);
   }
 }
----
-### 🔗 Useful Links
- ### • 🔧 Tinkercad Circuit Image:
-View Circuit Image
- • 💻 Arduino Code File:
-Download Code
- ### • ▶️ Demo Video:
-https://drive.google.com/file/d/1CmkTs7jXkRkQkdUNyvlPnspf83YovzcU/view?usp=drive_link
