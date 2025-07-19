@@ -132,4 +132,55 @@ void loop() {
   }
 }
 ```
+---
+### Task2:B (design and programming of analog sensor).
+# 🌱 Soil Moisture Sensor with Arduino
 
+This project demonstrates how to use an analog soil moisture sensor with an Arduino Uno to monitor soil dryness and activate an LED indicator when the soil gets too dry.
+
+---
+
+## 🔧 Components Used:
+- Arduino Uno  
+- Soil Moisture Sensor (Analog output)  
+- LED  
+- 220Ω Resistor  
+- Breadboard + Jumper wires
+
+---
+## 🧠 How it works:
+- The sensor reads analog values from the soil (0–1023).
+- If the value is below a set threshold (indicating dry soil), the LED will turn ON.
+- Otherwise, the LED remains OFF.
+
+---
+## 🔌 Circuit Diagram
+![IR Sensor Arduino Circuit](https://github.com/JawaherMQ5/Task1-week4/blob/main/Digital%20sensor.png) 
+---
+## 📎 Tinkercad Link
+https://www.tinkercad.com/things/cqMKoUMHRg7/editel?returnTo=%2Fdashboard
+---
+## 💻 Arduino Code:
+```cpp
+const int soilPin = A0;
+const int ledPin = 3;
+int threshold = 500; // Adjust based on your soil moisture
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int soilValue = analogRead(soilPin);
+  Serial.println(soilValue); // Print value to Serial Monitor
+
+  if (soilValue < threshold) {
+    digitalWrite(ledPin, HIGH); // Soil is dry
+  } else {
+    digitalWrite(ledPin, LOW);  // Soil is moist
+  }
+
+  delay(1000);
+}
+```
