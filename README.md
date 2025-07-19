@@ -99,10 +99,7 @@ This setup is ideal for simple automation like obstacle sensing, motion alerts, 
 ---
 
 ## 🔌 Circuit Diagram
-
-📎 _Attach circuit image below this line_
-
-![IR Sensor Arduino Circuit](images/ir-sensor-diagram.png) 
+![IR Sensor Arduino Circuit](https://github.com/JawaherMQ5/Task1-week4/blob/main/Digital%20sensor.png) 
 ---
 ## 📎 Tinkercad Link
 https://www.tinkercad.com/things/1BFGI3Ufllk-digital-sensor/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
