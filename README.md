@@ -1,4 +1,4 @@
-### Task1 (﻿﻿﻿make a latching power switch circuit with auto power off and on.)
+### Task1 (﻿make a latching power switch circuit with auto power off and on.)
 ## 🔌 Latching Power Switch with Auto On/Off using PIR & Push Button (Arduino)
 
 This project demonstrates how to build a latching power switch system using an Arduino Uno, a PIR motion sensor, and a push button. The system turns on an LED when motion is detected or when the button is pressed, and automatically turns it off after 10 seconds of inactivity.
@@ -64,5 +64,75 @@ void loop() {
     digitalWrite(ledPin, LOW);
   }
 }
+```
+---
+### Task2:A (design and programming of digital sensor).
+# 🔧 Design and Programming of Digital IR Sensor with Arduino
+
+## 📌 Project Overview
+
+This project demonstrates the use of a digital IR (infrared) sensor to detect nearby objects.  
+When the IR sensor detects something (like a hand), an LED lights up as a response.
+
+The IR sensor works digitally — it sends HIGH or LOW based on object detection.  
+This setup is ideal for simple automation like obstacle sensing, motion alerts, or touchless control.
 
 ---
+
+## 🧠 How It Works
+
+- The IR sensor emits infrared light.
+- When an object reflects the IR light back to the sensor, the OUT pin goes HIGH.
+- Arduino receives the signal via pin D2 and turns ON the LED on pin 13.
+- When there's no object, the signal goes LOW and the LED turns OFF.
+
+---
+
+## ⚙️ Components Used
+
+- ✅ Arduino Uno  
+- ✅ IR sensor module (digital output)  
+- ✅ LED  
+- ✅ 220Ω resistor  
+- ✅ Breadboard & jumper wires  
+
+---
+
+## 🔌 Circuit Diagram
+
+📎 _Attach circuit image below this line_
+
+![IR Sensor Arduino Circuit](images/ir-sensor-diagram.png) 
+---
+## 📎 Tinkercad Link
+https://www.tinkercad.com/things/1BFGI3Ufllk-digital-sensor/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
+---
+## 🧾 Arduino Code
+
+```cpp
+const int irPin = 2;      // IR sensor output
+const int ledPin = 13;    // LED or fan
+unsigned long lastDetectTime = 0;
+unsigned long timeout = 5000; // 5 ثواني
+
+bool systemOn = false;
+
+void setup() {
+  pinMode(irPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  if (digitalRead(irPin) == HIGH) {
+    systemOn = true;
+    lastDetectTime = millis();
+    digitalWrite(ledPin, HIGH);
+  }
+
+  if (systemOn && (millis() - lastDetectTime > timeout)) {
+    systemOn = false;
+    digitalWrite(ledPin, LOW);
+  }
+}
+```
+
