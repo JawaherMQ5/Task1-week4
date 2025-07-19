@@ -155,7 +155,7 @@ This project demonstrates how to use an analog soil moisture sensor with an Ardu
 
 ---
 ## 🔌 Circuit Diagram
-![IR Sensor Arduino Circuit](https://github.com/JawaherMQ5/Task1-week4/blob/main/Digital%20sensor.png) 
+![IR Sensor Arduino Circuit](https://github.com/JawaherMQ5/Task1-week4/blob/main/Analog%20sensor.png) 
 ---
 ## 📎 Tinkercad Link
 https://www.tinkercad.com/things/cqMKoUMHRg7/editel?returnTo=%2Fdashboard
